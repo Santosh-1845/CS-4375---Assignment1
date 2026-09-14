@@ -82,7 +82,7 @@ y_test = y_test.to_numpy()
 #--
 
 learning_rate = 0.0065
-iterations = 2000
+iterations = 1000
 
 model = SGDRegressor(
     loss="squared_error",

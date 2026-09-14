@@ -5,6 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import mean_squared_error, r2_score, explained_variance_score
 
+import matplotlib.pyplot as plt
 
 #--
 # loading dataset
@@ -127,8 +128,8 @@ class LinearRegressionGD:
 #--
 
 
-learning_rate = 0.1
-iterations = 2000
+learning_rate = 0.2
+iterations = 500
 
 model = LinearRegressionGD(
     learning_rate=learning_rate,
@@ -197,3 +198,25 @@ trial_table = pd.DataFrame({
 
 print("\n================ TRIAL RESULTS ================")
 print(trial_table.to_string(index=False))
+
+
+
+
+
+# G1 vs G3
+plt.figure()
+plt.scatter(data["G1"], data["G3"], alpha=0.6)
+plt.xlabel("G1 - First Period Grade")
+plt.ylabel("G3 - Final Grade")
+plt.title("G1 vs G3")
+plt.grid(True)
+plt.show()
+
+# G2 vs G3
+plt.figure()
+plt.scatter(data["G2"], data["G3"], alpha=0.6)
+plt.xlabel("G2 - Second Period Grade")
+plt.ylabel("G3 - Final Grade")
+plt.title("G2 vs G3")
+plt.grid(True)
+plt.show()

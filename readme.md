@@ -1,5 +1,6 @@
 CS 4375 Assignment 1
 
+disclaimer: I did use the help of AI to make the gradient descent program and the graphing at the end of part1.py to plot G1 vs G3 and then G2 vs G3
 
 Purpose:  comparing two lienar regression models using the UCI Student Performance dataset
 
@@ -22,9 +23,9 @@ Requirements:
 -NumPy
 -pandas
 -scikit-learn
+-Matplotlib
 
-
-Install packages:      python -m pip install numpy pandas scikit-learn
+Install packages: python -m pip install numpy pandas scikit-learn matplotlib
 
 
 How to Run:
